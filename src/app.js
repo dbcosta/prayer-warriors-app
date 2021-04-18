@@ -3,7 +3,7 @@ const hbs = require("hbs");
 const path = require("path");
 
 const app = express();
-
+const port = process.env.PORT || 3003;
 const pathToViews = path.join("__dirname", "../templates/views");
 const pathToPartials = path.join("__dirname", "../templates/partials");
 const pathStatic = path.join("__dirname", "../public");
@@ -22,6 +22,6 @@ app.get("", (req, res) => {
   });
 });
 
-app.listen(3003, () => {
-  console.log("App is up at port 3003!");
+app.listen(port, () => {
+  console.log("App is up at port ", port);
 });
