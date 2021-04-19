@@ -1,1 +1,30 @@
-<header>Be a Prayer Warrior for Jesus Christ!</header>
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="/" class="topnav-active">Home</a>
+        <a href="/prayers">Prayers</a>
+        <a href="/hymns">Hymns</a>
+        <a href="/scriptures">Scriptures</a>
+        <a href="#news">Articles</a>
+        <a href="#contact">Contact</a>    
+        <a href="#about">About</a>
+        {{!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a> --}}
+    </div>
+<script>
+    let buttons = document.querySelectorAll("a");
+  console.log(buttons);
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      button.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+</script>
+</body>
+</html>

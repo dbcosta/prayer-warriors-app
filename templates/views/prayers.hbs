@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/pw1.jpg">
+</head>
+<body>
+    {{>header}}
+    <button class="accordion">Chaplets</button>
+    <div class="panel">
+    <p>
+        <a href="https://www.preciousbloodinternational.com/prayers_05.html">The Chaplet of the Precious Blood</a>
+        <br><br>
+        <a href="https://www.preciousbloodinternational.com/prayers_06.html">Litany to the Precious Blood of Jesus</a>
+        <br><br>
+        <a href="https://www.thedivinemercy.org/message/devotions/pray-the-chaplet">The Chaplet of the Divine Mercy</a> 
+        <br><br>
+        <a href="https://www.ewtn.com/catholicism/devotions/chaplet-of-st-michael-the-archangel-386">The Chaplet to St. Michael</a> 
+    </p>
+    </div>
+
+    <button class="accordion">Prayers to the Holy Trinity</button>
+    <div class="panel">
+    <p>
+        <a href="http://dmpg.50megs.com/dmpg_holytrinityprayer.html">Prayer to the Holy Trinity</a>
+    </p>
+    </div>
+
+    <button class="accordion">The Holy Rosary</button>
+    <div class="panel">
+    <p>
+        <a href="http://www.ocarm.in/index.php/let-us-pray/english/rosary/">The Holy Rosary</a>
+    </p>
+    </div>
+    
+    
+    
+    
+    {{>footer}}
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+    </script>  
+</body>
+</html>

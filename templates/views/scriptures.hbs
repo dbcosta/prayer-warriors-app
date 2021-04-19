@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/pw1.jpg">
+</head>
+<body>
+    {{>header}}
+    <button class="accordion">Healing</button>
+    <div class="panel">
+    <p class="text-style">
+       Wis 16 vs 12 - "For neither herb nor poultice cured them, but it was your word, O Lord, that heals all people."<br><br>
+       Jer 30 vs 17 - "For I will restore health to you, and your wounds I will heal, says the Lord" 
+    </p>
+    </div>
+
+    <button class="accordion">Financial Breakthrough</button>
+    <div class="panel">
+    <p class="text-style">
+        Ps 90 vs 17 - "Let the favor of the Lord our God be upon us,and prosper for us the work of our hands—O prosper the work of our hands!"
+        <br><br>
+        Prov 3 vs 5 - "Trust in the Lord with all your heart, and do not rely on your own insight. In all your ways acknowledge him and he will make straight your paths."
+    </p>
+    </div>
+
+    <button class="accordion">Family Matters</button>
+    <div class="panel">
+    <p class="text-style">
+        <a href="http://dmpg.50megs.com/dmpg_holytrinityprayer.html">Prayer to the Holy Trinity</a>
+    </p>
+    </div>
+
+    <button class="accordion">Court cases</button>
+    <div class="panel">
+    <p class="text-style">
+        Lk 10 vs 19 -- "See, I have given you authority to tread on snakes and scorpions, and over all the power of the enemy; and nothing will hurt you."	
+    </p>
+    </div>
+
+    <button class="accordion">Life partners</button>
+    <div class="panel">
+    <p class="text-style">
+        Gen 2 vs 18 - Then the Lord God said, “It is not good that the man should be alone; I will make him a helper as his partner.”	
+    </p>
+    </div>
+
+    <button class="accordion">Blood of Jesus</button>
+    <div class="panel">
+    <p class="text-style">
+        <a href="http://www.ocarm.in/index.php/let-us-pray/english/rosary/">The Holy Rosary</a>
+    </p>
+    </div>
+
+    <button class="accordion">Name of Jesus</button>
+    <div class="panel">
+    <p class="text-style">
+        <a href="http://www.ocarm.in/index.php/let-us-pray/english/rosary/">The Holy Rosary</a>
+    </p>
+    </div>
+    
+    <button class="accordion">Deliverance</button>
+    <div class="panel">
+    <p class="text-style">
+        <a href="http://www.ocarm.in/index.php/let-us-pray/english/rosary/">The Holy Rosary</a>
+    </p>
+    </div>
+
+    <button class="accordion">Holy Spirit</button>
+    <div class="panel">
+    <p class="text-style">
+        Ps 143 vs 10 - "Teach me to do your will, for you are my God. Let your good Spirit lead me on a level path."
+        <br><br>
+        Is 58 vs 11 - The Lord will guide you continually, and satisfy your needs in parched places, and make your bones strong; and you shall be like a watered garden, like a spring of water, whose waters never fail.
+        <br><br>
+        Is 42 vs 16 - I will lead the blind by a road they do not know, by paths they have not known I will guide them. I will turn the darkness before them into light, the rough places into level ground. These are the things I will do, and I will not forsake them.
+    </p>
+    </div>
+
+    <button class="accordion">Sanctification</button>
+    <div class="panel">
+    <p class="text-style">
+        Josh 3 vs 5 -Then Joshua said to the people, “Sanctify yourselves; for tomorrow the Lord will do wonders among you.”
+        
+    </p>
+    </div>
+    
+    
+    
+    {{>footer}}
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+    </script>  
+</body>
+</html>

@@ -22,6 +22,30 @@ app.get("", (req, res) => {
   });
 });
 
+app.get("/prayers", (req, res) => {
+  res.render("prayers", {
+    title: "Prayer Warriors",
+    description: "Come join us in being a Prayer Warrior for Jesus Christ!",
+    createdBy: "Belinda DCosta",
+  });
+});
+
+app.get("/hymns", (req, res) => {
+  res.render("hymns", {
+    title: "Prayer Warriors",
+    description: "Come join us in being a Prayer Warrior for Jesus Christ!",
+    createdBy: "Belinda DCosta",
+  });
+});
+
+app.get("/scriptures", (req, res) => {
+  res.render("scriptures", {
+    title: "Prayer Warriors",
+    description: "Come join us in being a Prayer Warrior for Jesus Christ!",
+    createdBy: "Belinda DCosta",
+  });
+});
+
 app.listen(port, () => {
   console.log("App is up at port ", port);
 });

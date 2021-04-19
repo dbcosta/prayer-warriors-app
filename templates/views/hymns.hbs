@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/pw1.jpg">
+</head>
+<body>
+    {{>header}}
+    <button class="accordion">Worship Hymns</button>
+    <div class="panel">
+    <p>
+        
+    </p>
+    </div>
+
+    <button class="accordion">Holy Trinity</button>
+    <div class="panel">
+    <p>
+        <a href="http://dmpg.50megs.com/dmpg_holytrinityprayer.html">Prayer to the Holy Trinity</a>
+    </p>
+    </div>
+
+    <button class="accordion">Holy Spirit</button>
+    <div class="panel">
+    <p>
+        <a href="http://dmpg.50megs.com/dmpg_holytrinityprayer.html">Prayer to the Holy Trinity</a>
+    </p>
+    </div>
+
+    <button class="accordion">Blood of Jesus</button>
+    <div class="panel">
+    <p>
+        <a href="http://www.ocarm.in/index.php/let-us-pray/english/rosary/">The Holy Rosary</a>
+    </p>
+    </div>
+
+    <button class="accordion">Name of Jesus</button>
+    <div class="panel">
+    <p>
+        <a href="http://www.ocarm.in/index.php/let-us-pray/english/rosary/">The Holy Rosary</a>
+    </p>
+    </div>
+    
+    <button class="accordion">Adoration</button>
+    <div class="panel">
+    <p>
+        <a href="http://www.ocarm.in/index.php/let-us-pray/english/rosary/">The Holy Rosary</a>
+    </p>
+    </div>
+
+    <button class="accordion">Praise</button>
+    <div class="panel">
+    <p>
+        <a href="http://www.ocarm.in/index.php/let-us-pray/english/rosary/">The Holy Rosary</a>
+    </p>
+    </div>
+    
+    
+    
+    {{>footer}}
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+    </script>  
+</body>
+</html>
